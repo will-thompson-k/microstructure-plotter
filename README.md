@@ -12,6 +12,8 @@ See the [illustrated example](#illustrated-example) for a deep dive into what th
 
 ![zoooooom](/assets/plotter_video.gif)
 
+! [tts](/assets/tts.png)
+
 ![orders](/assets/erratic_valuation_3.png)
 
 ## Contents
@@ -24,7 +26,7 @@ See the [illustrated example](#illustrated-example) for a deep dive into what th
 - [💸Free Advice](#free-advice)
 - [✏️Data Schema](#%EF%B8%8Fdata-schema)
 - [🤔What is "Market Microstructure"?](#what-is-market-microstructure)
-- [🛞Installation]#installation)
+- [🛞Installation](#installation)
 - [	📜Reqs](#reqs)
 - [𓊍To Do](#𓊍to-do)
 - [Citation](#citation)
@@ -43,8 +45,8 @@ You should **B.Y.O.A** (_Bring Your Own Alpha_).
 Here are some useful features to take note of 🥁: 
 
 1. ✨Plot **multiple** 🤹, asynchronous (unsampled) microstructure elements together on **the sample plot**: <ins>order book quotes</ins>, <ins>trades</ins>, <ins>orders</ins>, <ins>order acks</ins>, <ins>fills</ins> etc etc
-2. ✨Analyze events on seconds, milliseconds, microseconds, _nanoseconds_ 🕳️ ➡️ zoom 🔎 in on the **most granular time unit** available to microstructure behavior.
-3. ✨All axes are 🔗**linked** ➡️ <ins>zoom 🔎 in on one product, see what's happening in all others at that same timestamp</ins>
+2. ✨Analyze events on seconds, milliseconds, microseconds, _nanoseconds_ 🕳️ : zoom 🔎 in on the **most granular time unit** available to microstructure behavior
+3. ✨All axes are 🔗**linked** : 🔎 _zoom in on one product, see what's happening in all others at that same timestamp_
 
 ## 🧠Illustrated Example
 
@@ -52,7 +54,7 @@ To show why a tool like this might be useful, [here](/examples/README.md) is an 
 
 <ins>Note</ins>: This data was painstakingly created _by hand_ 🤌 to appear quasi-realistic. I am not an artist 🧑‍🎨 nor is this real 🌎 data. 
 
-See the [legend](#plots-legend) 👇 to understand the plots further.
+See the [legend](#%EF%B8%8Fplots-legend) 👇 to understand the plots further.
 
 ## 🧪Test It Out Right Now
 

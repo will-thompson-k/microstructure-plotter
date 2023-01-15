@@ -4,15 +4,15 @@ Here is a gallery of hand-crafted examples to illustrate the value of such a too
 
 <ins>Disclaimer</ins>: This data was painstakingly created _by hand_ 🤌 to appear quasi-realistic. I am not an artist 🧑‍🎨 nor is this real 🌎 data.
 
-You may want to first check out [the legend](docs/legend/README.md) and perhaps [the 30 second primer on microstructure](/docs/micro_primer/README.md) prior.
+You may want to first check out [the legend](/docs/legend/README.md) and perhaps [the 30 second primer on microstructure](/docs/micro_primer/README.md) prior.
 
 ## Example
 
 This example contains 3 different "events" of interest commonly found in the wild: 
 
-1. <ins>Event 1:</ins> [💸 Erratic valuation](#event-1-erratic-valuation)
-2. <ins>Event 2:</ins> [😔 Didn't send order](#event-2-didnt-send-order)
-3. <ins>Event 3:</ins> [🚀 Trade-through-the-stack event](#event-3-trade-through-the-stack-event)
+1. <ins>Event 1:</ins> [💸 Erratic valuation](#event-1--erratic-valuation)
+2. <ins>Event 2:</ins> [😔 Didn't send order](#event-2--didnt-send-order)
+3. <ins>Event 3:</ins> [🚀 Trade-through-the-stack event](#event-3--trade-through-the-stack-event)
 
 ![examples](/assets/zoomed_out_events.png)
 
