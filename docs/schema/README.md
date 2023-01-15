@@ -1,6 +1,6 @@
 # Schema
 
-Here are the fields and data types expected for each data input. Only quote data is a required input; all others are optional. 
+Here are the fields and data types expected for each data input. Only the quote data is a required input. All others are optional. 
 
 ## Quote Data
 
@@ -42,4 +42,4 @@ Here are the fields and data types expected for each data input. Only quote data
 
 ## Code 
 
-Reference [microplot::schema](microplot/schema.py).
+Reference [microplot::schema](/microplot/schema.py).

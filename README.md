@@ -1,27 +1,31 @@
 # microstructure-plotter
 
-**For those of you in the trenches, I offer ye this tool ⚔️.** 
+**For those of you in the trenches, I offer ye this tool ⚔️** 
 
 This is a plotting tool designed to help visualize financial market data 📈 and trading system behavior 🤖 on the smallest timescales 🔎. 
 
-As all things in life, when it comes to microstructure & HFT: _the devil is in the details_. 
+As all things in life, when it comes to financial microstructure: _the devil 😈 is in the details_ 
 
-Built using [Chaco](https://docs.enthought.com/chaco/index.html) 🌮.
+Built using [Chaco](https://docs.enthought.com/chaco/index.html) 🌮
+
+See the [illustrated example](#illustrated-example) for a deep dive into what this plotting tool can uncover 🔎.
 
 ![zoooooom](/assets/plotter_video.gif)
 
+![orders](/assets/erratic_valuation_3.png)
+
 ## Contents
 
-- [⚠️Disclaimer](#⚠️disclaimer)
-- [🧪Test It Out Right Now](#🧪test-it-right-out-now)
-- [✨Features](#✨features)
-- [🧠Illustrated Example](#🧠illustrated-example)
-- [🗺️Plots Legend](#🗺️plots-legend)
-- [💸Free Advice](#💸free-advice)
-- [✏️Data Schema](#✏️data-schema)
-- [🤔What is "Market Microstructure"?](#🤔what-is-market-microstructure)
-- [🛞Installation](#🛞installation)
-- [	📜Reqs](#📜reqs)
+- [⚠️Disclaimer](#%EF%B8%8Fdisclaimer)
+- [✨Features](#features)
+- [🧠Illustrated Example](#illustrated-example)
+- [🧪Test It Out Right Now](#test-it-out-right-now)
+- [🗺️Plots Legend](#%EF%B8%8Fplots-legend)
+- [💸Free Advice](#free-advice)
+- [✏️Data Schema](#%EF%B8%8Fdata-schema)
+- [🤔What is "Market Microstructure"?](#what-is-market-microstructure)
+- [🛞Installation]#installation)
+- [	📜Reqs](#reqs)
 - [𓊍To Do](#𓊍to-do)
 - [Citation](#citation)
 - [License](#license)
@@ -30,29 +34,17 @@ Built using [Chaco](https://docs.enthought.com/chaco/index.html) 🌮.
 
 There is no α here. This is just a fancy wrapper on top of an open-source plotting package. 
 
-You should _Bring Your Own Alpha_ (**B.Y.O.A.**). 
+You should **B.Y.O.A** (_Bring Your Own Alpha_). 
 
-**HOWEVER**...for the trained eye, this simple type of visualization can be immensely helpful.
-
-## 🧪Test It Right Out Now
-
-After installing the package either via [pip](#🛞installation) or via [setup.py](#📜reqs), run this quick line to see this in action right now:
-
-``` bash examples/example_1/plot_example.sh ``` 
-
-or 
-
-``` python examples/example_1/plot_example.py ``` 
-
-**Right-click** 🖱️ to zoom in on different parts of the plot to see what is happening on **smaller** and **_smaller_** timescales 🔎. You may want to consult the [legend](#🗺️plots-legend) 👇 or [illustrated example](#🧠illustrated-example) 👇.
+**However**...for the trained eye 👁️, this simple type of visualization can be immensely helpful.
 
 ## ✨Features
 
 Here are some useful features to take note of 🥁: 
 
-1. ✨Plot multiple 🤹, asynchronous (unsampled!) microstructure elements together on the sample plot: <ins>order book quotes</ins>, <ins>trades</ins>, <ins>orders</ins>, <ins>order acks</ins>, <ins>fills<ins> etc.
-2. ✨Analyze events on seconds, milliseconds, microseconds, nanoseconds 🕳️ - Zoom in on the most granular time unit available using **Right-click zoom**.
-3. ✨All products axes are 🔗linked - zoom in on one product, see what's happening in all others at that same timestamp
+1. ✨Plot **multiple** 🤹, asynchronous (unsampled) microstructure elements together on **the sample plot**: <ins>order book quotes</ins>, <ins>trades</ins>, <ins>orders</ins>, <ins>order acks</ins>, <ins>fills</ins> etc etc
+2. ✨Analyze events on seconds, milliseconds, microseconds, _nanoseconds_ 🕳️ ➡️ zoom 🔎 in on the **most granular time unit** available to microstructure behavior.
+3. ✨All axes are 🔗**linked** ➡️ <ins>zoom 🔎 in on one product, see what's happening in all others at that same timestamp</ins>
 
 ## 🧠Illustrated Example
 
@@ -60,7 +52,19 @@ To show why a tool like this might be useful, [here](/examples/README.md) is an 
 
 <ins>Note</ins>: This data was painstakingly created _by hand_ 🤌 to appear quasi-realistic. I am not an artist 🧑‍🎨 nor is this real 🌎 data. 
 
-See the [legend](#🗺️plots-legend) 👇 to understand the plot further.
+See the [legend](#plots-legend) 👇 to understand the plots further.
+
+## 🧪Test It Out Right Now
+
+After installing the package either via [pip](#installation) or via [setup.py](#reqs), run this quick line to see this in action right now:
+
+``` bash examples/example_1/plot_example.sh ``` 
+
+or 
+
+``` python examples/example_1/plot_example.py ``` 
+
+**Right-click** 🖱️ to zoom in on different parts of the plot to see what is happening on **smaller** and **_smaller_** timescales 🔎. Consult the [legend](#plots-legend) or [illustrated example](#illustrated-example) for more clarity on how to interpret the plots.
 
 ## 🗺️Plots Legend
 
@@ -68,17 +72,17 @@ See the [legend](#🗺️plots-legend) 👇 to understand the plot further.
 
 ## 💸Free Advice
 
-1. <ins>_Don't log ✏️ in prod_</ins> (unless logging isn't occuring on the hot path). 
+1. <ins>_Don't log in prod_</ins> ✏️ (unless logging isn't occuring on the hot path). 
 2. Make sure the timestamps are from ⏰ <ins>_synchronized clocks_</ins> ⏰ (better if geosync'd/GPS) with enough precision, otherwise these plots will be uninformative or misleading. If you don't trust others' timestamps, do your own capture. 
 3. This plotter is _memory intensive_ 🧠. Don't try to plot too much at once. 
 
 ## ✏️Data Schema
 
-This plotting module expects a specific data schema that is described [here](/docs/schema/README.md).
+This plotting module expects a specific [data schema](/docs/schema/README.md).
 
 ## 🤔What is "Market Microstructure"?
 
-_For the uninitiated, here is a ⏰ 30 second primer ⏰ on market microstructure [here](/docs/micro_primer/README.md)_.
+_For the uninitiated, here is a [⏰ 30 second primer ⏰ on market microstructure](/docs/micro_primer/README.md)_.
 
 ## 🛞Installation
 
