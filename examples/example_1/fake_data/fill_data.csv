@@ -1,0 +1,6 @@
+timestamp,symbol,price,is_buy,is_aggressive
+1672543072001007000,COIN_B,10.0,True,False
+1672542962000015000,COIN_B,12.0,True,True
+1672543099002670000,COIN_B,10.0,False,False
+1672542963000005000,COIN_B,9.0,False,True
+

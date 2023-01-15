@@ -1,0 +1,3 @@
+# Interactive microstructure plot example using fake data. 
+# Bash script.
+python microplot/scripts/plot_csv.py -quote_data_file examples/example_1/fake_data/quote_data.csv -trade_data_file examples/example_1/fake_data/trade_data.csv -fill_data_sim_file examples/example_1/fake_data/fill_data.csv -orders_data_file examples/example_1/fake_data/order_data.csv -valuation_data_file examples/example_1/fake_data/val_data.csv
