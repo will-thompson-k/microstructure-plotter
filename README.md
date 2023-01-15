@@ -12,7 +12,7 @@ See the [illustrated example](#illustrated-example) for a deep dive into what th
 
 ![zoooooom](/assets/plotter_video.gif)
 
-! [tts](/assets/tts.png)
+![tts](/assets/tts.png)
 
 ![orders](/assets/erratic_valuation_3.png)
 
